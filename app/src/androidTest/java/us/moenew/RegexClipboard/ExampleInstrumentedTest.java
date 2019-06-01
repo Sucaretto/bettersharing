@@ -1,4 +1,4 @@
-package us.moenew.bettersharing;
+package us.moenew.RegexClipboard;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

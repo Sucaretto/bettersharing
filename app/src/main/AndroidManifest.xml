@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="us.moenew.bettersharing">
+    package="us.moenew.RegexClipboard">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="us.moenew.RegexClipboard.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -18,7 +18,7 @@
         </activity>
 
         <activity
-            android:name=".ShareProcess"
+            android:name="us.moenew.RegexClipboard.ShareProcess"
             android:label="@string/share_act__name">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -28,7 +28,7 @@
         </activity>
 
         <activity
-            android:name=".Clipboard"
+            android:name="us.moenew.RegexClipboard.Clipboard"
             android:label="@string/Clipboard">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
