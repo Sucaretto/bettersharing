@@ -2,15 +2,23 @@ package us.moenew.bettersharing;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static android.os.Binder.getCallingUid;
 
 public class ShareProcess extends AppCompatActivity {
 
@@ -20,6 +28,7 @@ public class ShareProcess extends AppCompatActivity {
         Intent intent = getIntent();
         String action = intent.getAction();
         String type = intent.getType();
+
         if (Intent.ACTION_SEND.equals(action) && type != null) {
             if ("text/plain".equals(type)) handleSendText(intent); // 处理发送来的文字
         }
