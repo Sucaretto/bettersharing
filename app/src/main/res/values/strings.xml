@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">更好的分享</string>
-    <string name="share_act__name">剪切板</string>
+    <string name="app_name">剪切板</string>
+    <string name="Clipboard">剪切板</string>
+    <string name="share_act__name">剪切板改</string>
 </resources>
